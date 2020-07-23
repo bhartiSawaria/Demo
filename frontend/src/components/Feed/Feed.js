@@ -21,7 +21,7 @@ class Feed extends Component{
     }
 
     componentDidMount(){
-        fetch('http://localhost:8080/feed',{
+        fetch('https://backend-hello-world.herokuapp.com/feed',{
             method: 'GET',
             headers: {
                 Authorization: 'Bearer ' + this.props.token

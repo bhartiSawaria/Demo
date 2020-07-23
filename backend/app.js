@@ -21,7 +21,7 @@ const CLOUDINARY_API_SECRET = process.env.CLOUDINARY_API_SECRET;
 
 const app = express();
 
-app.use(cors());
+// app.use(cors());
 
 cloudinary.config({
     cloud_name: CLOUDINARY_CLOUD_NAME,
@@ -43,12 +43,12 @@ const imageStorage = new CloudinaryStorage({
 app.use(bodyParser.json());
 app.use(multer({storage: imageStorage}).single('image'));
 
-// app.use((req, res, next) => {
-//     res.setHeader('Access-Control-Allow-Origin', '*');
-//     res.setHeader('Access-Control-Allow-Headers', '*');
-//     res.setHeader('Access-Control-Allow-Methods', 'PUT, PATCH, GET, POST, DELETE');
-//     next();
-// });
+app.use((req, res, next) => {
+    res.setHeader('Access-Control-Allow-Origin', 'https://backend-hello-world.herokuapp.com');
+    res.setHeader('Access-Control-Allow-Headers', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'OPTIONS, PUT, PATCH, GET, POST, DELETE');
+    next();
+});
 
 
 app.use(authRoutes);
