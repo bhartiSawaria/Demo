@@ -1,0 +1,76 @@
+
+.RootContainer{
+    text-align: center;
+    margin: 20vh auto;
+    width: 60%;
+}
+
+.ChatTitle,
+.SearchTitle{
+    display: inline-block;
+    width: 50%;
+    padding: 1rem;
+    align-items: center;
+    box-sizing: border-box;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #eee;
+    /* border: 1px solid black; */
+}
+
+.Test{
+    /* border: 1px solid red; */
+    /* border-bottom: 0px; */
+    /* border-top-left-radius: 5px; */
+    background-color: white;
+    /* border-color: black; */
+}
+
+.DisplayContainer{
+    display: block;
+}
+
+.HideContainer{
+    display: none;
+}
+
+.ChatsContainer{
+    background-color: white;
+    width: 100%;
+    padding: 8px 0px;
+    min-height: 20vh;
+}
+
+.UsersContainer{
+    background-color: white;
+    width: 100%;
+    height: 80%;
+    padding: 8px 0px;
+}
+
+.NoChat{
+    padding: 16px 0px;
+}
+
+@media (max-width: 992px){
+    .RootContainer{
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px){
+    .RootContainer{
+        width: 80%;
+    }
+}
+
+@media (max-width: 578px){
+    .RootContainer{
+        margin-top: 15vh;
+        width: 90%;
+    }
+
+    /* .ChatsContainer{
+        min-height: 60vh;
+    } */
+}

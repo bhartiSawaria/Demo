@@ -1,0 +1,52 @@
+
+.RootContainer{
+    background-color: white;
+    padding: 1rem;
+    margin: 0.5rem auto;
+    width: 70%;
+    text-align: left;
+    border: 1px solid #eee;
+    box-shadow: 1px 1px 1px #ccc;
+    display: flex;
+    justify-content: space-between;
+}
+
+.RootContainer img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 0.5px solid black;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.RootContainer p{
+    font-size: 16px;
+    display: inline-block;
+    margin: 0em;
+    vertical-align: middle;
+}
+
+
+@media (max-width: 992px){
+    .RootContainer{
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px){
+    .RootContainer{
+        width: 85%;
+    }
+}
+
+@media (max-width: 578px){
+    .RootContainer{
+        width: 90%;
+    }
+
+    .RootContainer p{
+        font-size: 14px;
+    }
+}

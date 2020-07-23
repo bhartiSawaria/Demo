@@ -1,0 +1,43 @@
+
+.RootContainer{
+    margin: 25vh auto;
+    width: 60%;
+    /* height: 60%; */
+    background-color: #d6d6d6;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.InputField input,
+.ImageField input{
+    width: 100%;
+    margin: auto;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    margin-bottom: 1rem;
+
+}
+
+.ImageField input{
+    background-color: white;
+}
+
+.PostButton{
+    width: 100%;
+}
+
+@media (max-width: 768px){
+    .RootContainer{
+        width: 80%;
+    }
+}
+
+@media (max-width: 578px){
+    .RootContainer{
+        width: 90%;
+        margin: 20vh auto;
+    }
+}
+
+

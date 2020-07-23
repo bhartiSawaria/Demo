@@ -1,0 +1,76 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+
+.Rootcontainer{
+    display: flex;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 15vh;
+    box-sizing: border-box;
+}
+
+.PostType{
+    height: 60%;
+    width: 45%;
+    background-color: #d6d6d6;
+    padding: 16px;
+    margin: auto;
+    cursor: pointer;
+    background: url('../../assets/images/homepagePic1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.PostType div{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.PostType p{
+    font-family: 'Tangerine', cursive;
+    font-size: 42px;
+    display: inline-block;
+    margin: 30% auto;
+}
+
+@media (max-width: 992px) {
+
+    .Rootcontainer{
+        width: 90%;
+    }
+
+    .PostType{
+        width: 80%;
+        margin: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .Rootcontainer{
+        width: 90%;
+    }
+
+    .PostType{
+        width: 80%;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .Rootcontainer{
+        width: 100%;
+    }
+
+    .PostType{
+        width: 90%;
+    }
+}

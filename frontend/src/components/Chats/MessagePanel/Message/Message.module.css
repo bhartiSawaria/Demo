@@ -1,0 +1,54 @@
+
+.RootContainerRight,
+.RootContainerLeft{
+    margin: 8px;
+}
+
+.RootContainerRight{
+    text-align: right;
+}
+
+.RootContainerLeft{
+    text-align: left;
+}
+
+.RootContainerRight > p,
+.RootContainerLeft > p{
+    background-color: white;
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.RootContainerLeft span,
+.RootContainerRight span{
+    right: 1rem;
+    bottom: 1rem;
+    font-size: 10px;
+    color: grey;
+    float: right;
+    background-color: white;
+    padding: 0px 8px;
+    border-radius: 8px;
+}
+
+.RootContainerRight > div,
+.RootContainerLeft > div{
+    max-width: 60%;
+    max-height: 500px;
+    display: inline-block;
+    text-align: right;
+    margin-top: 24px;
+}
+
+.Image{
+    height: 80%;
+    width: 100%;
+}
+
+@media (max-width: 992px){
+    .RootContainerRight > div,
+    .RootContainerLeft > div{
+        margin-top: 12px;
+    }
+}

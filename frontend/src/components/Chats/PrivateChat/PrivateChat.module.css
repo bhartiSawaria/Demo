@@ -1,0 +1,128 @@
+
+
+.RootContainer{
+    height: 100%;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    padding-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.MainHeader{
+    background-color: white;
+    text-align: left;
+    padding: 1.5rem;
+    border: 1px solid #d6d6d6;
+}
+
+.MainHeader > div{
+    display: inline-flex;
+    flex-direction: column;
+    vertical-align: middle;
+}
+
+.MainHeader img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 0.5px solid black;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.MainHeader p{
+    font-size: 16px;
+    display: inline-block;
+    margin: 0em;
+}
+
+.MainHeader span{
+    display: inline-block;
+    font-size: 12px;
+}
+
+.SendOptionsContainer{
+    padding: 1rem;
+    border: 1px solid #d6d6d6;
+}
+
+.MessageButton,
+.MediaButton{
+    padding: 0.8rem;
+    margin: 0.5rem;
+    width: 45%;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-family: 'Merriweather', serif;
+    font-size: 14px;
+}
+
+.MessageButton{
+    background-color: #00C853;
+    color: white;
+}
+
+/* .MessageButton:hover,
+.MessageButton:active{
+    background-color: white;
+    color: #00C853;
+    border: 1.5px solid #00C853;
+    font-weight: bold;
+} */
+
+.MediaButton{
+    background-color: #ff5252;
+    color: white;
+}
+
+.Modal{
+    margin: 15vh auto;
+    position: fixed;
+    width: 50%;
+    z-index: 20;
+    background-color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* .MediaButton:hover,
+.MediaButton:active{
+    background-color: white;
+    color: #ff5252;
+    border: 1.5px solid #ff5252;
+    font-weight: bold;
+} */
+
+
+
+@media (max-width: 992px){
+    .RootContainer{
+        width: 70%;
+    }
+
+    .Modal{
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px){
+    .RootContainer{
+        width: 80%;
+    }
+
+    .Modal{
+        width: 80%;
+    }
+}
+
+@media (max-width: 578px){
+    .RootContainer, .Modal{
+        width: 90%;
+    }
+}

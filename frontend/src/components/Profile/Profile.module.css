@@ -1,0 +1,113 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+.RootContainer{
+    text-align: center;
+    margin: 30vh auto;
+    background-color: #d6d6d6;
+    width: 45%;
+    padding: 2rem;
+    border-radius: 10px
+    /* margin: auto; */
+}
+
+.RootContainer img{
+    position: relative;
+    bottom: 120px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.InfoContainer{
+    margin-top: -110px;
+}
+
+.InfoContainer p{
+    font-size: 18px;
+    margin: 0.5rem;
+}
+
+.RootContainer button{
+    padding: 0.8rem;
+    margin: 1rem 3px;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-family: 'Merriweather', serif;
+    font-size: 14px;
+}
+
+.EditButton{
+    background-color: #00C853;
+    color: white;
+}
+
+.EditButton:hover,
+.EditButton:active{
+    background-color: white;
+    color: #00C853;
+    border: 1.5px solid #00C853;
+    font-weight: bold;
+}
+
+.DeleteButton{
+    background-color: #ff5252;
+    color: white;
+}
+
+.DeleteButton:hover,
+.DeleteButton:active{
+    background-color: white;
+    color: #ff5252;
+    border: 1.5px solid #ff5252;
+    font-weight: bold;
+}
+
+.Modal{
+    position: relative;
+    z-index: 20;
+    background-color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.EditForm{
+    position: relative;
+    z-index: 20;
+    background-color: #ccc;
+    padding: 1rem;
+    text-align: center;
+}
+
+.EditForm input{
+    margin: 1rem auto;
+}
+
+.Modal p{
+    margin: 12px;
+}
+
+@media (max-width: 992px){
+    .RootContainer{
+        width: 65%;
+    }
+}
+
+@media (max-width: 768px){
+    .RootContainer{
+        width: 75%;
+    }
+}
+
+@media (max-width: 578px){
+    .RootContainer{
+        width: 90%;
+    }
+
+    .RootContainer img{
+        height: 150px;
+        width: 150px;
+    }
+}
