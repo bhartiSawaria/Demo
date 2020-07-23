@@ -44,7 +44,7 @@ app.use(bodyParser.json());
 app.use(multer({storage: imageStorage}).single('image'));
 
 app.use((req, res, next) => {
-    res.setHeader('Access-Control-Allow-Origin', 'https://backend-hello-world.herokuapp.com');
+    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000, http://localhost:3001');
     res.setHeader('Access-Control-Allow-Headers', '*');
     res.setHeader('Access-Control-Allow-Methods', 'OPTIONS, PUT, PATCH, GET, POST, DELETE');
     next();
