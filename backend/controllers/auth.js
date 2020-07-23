@@ -4,7 +4,8 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
 const User = require('../modals/user'); 
-const { SECRET } = require('../keyInfo');
+// const { SECRET } = require('../keyInfo');
+const SECRET = process.env.SECRET;
 
 exports.postSignup = (req, res, next) => {
     const errors = validationResult(req);

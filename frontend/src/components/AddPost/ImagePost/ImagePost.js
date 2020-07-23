@@ -54,7 +54,7 @@ class ImagePost extends Component{
             formData.append('image', this.state.image);
             formData.append('userId', this.props.user.id);
 
-            fetch('http://localhost:8080/add-post', {
+            fetch('https://backend-hello-world/add-post', {
                 method: 'POST',
                 body: formData,
                 headers: {

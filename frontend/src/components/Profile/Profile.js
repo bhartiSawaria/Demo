@@ -29,7 +29,7 @@ class Profile extends Component{
     }
 
     componentDidMount(){
-        fetch('http://localhost:8080/my-profile', {
+        fetch('https://backend-hello-world/my-profile', {
             method: 'GET',
             headers: {
                 Authorization: 'Bearer ' + this.props.token
@@ -70,7 +70,7 @@ class Profile extends Component{
     }
 
     proceedFinalDeleteHandler = () => {
-        fetch('http://localhost:8080/delete-account', {
+        fetch('https://backend-hello-world/delete-account', {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',
@@ -101,7 +101,7 @@ class Profile extends Component{
 
     proceedFinalEditHandler = () => {
         this.setState({isEditing: true});
-        fetch('http://localhost:8080/edit-account', {
+        fetch('https://backend-hello-world/edit-account', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -170,7 +170,7 @@ class Profile extends Component{
             const formData = new FormData();
             formData.append('image', this.state.image);
             formData.append('imageUrl', profilePic);
-            fetch('http://localhost:8080/change-profile-pic', {
+            fetch('https://backend-hello-world/change-profile-pic', {
                 method: 'POST',
                 body: formData,
                 headers: {

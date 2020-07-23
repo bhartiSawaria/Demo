@@ -37,7 +37,7 @@ class MyPosts extends Component{
     }
 
     fetchPostsFromDatabase = () => {
-        fetch('http://localhost:8080/user/posts',{
+        fetch('https://backend-hello-world/user/posts',{
             method: 'GET',
             headers: {
                 Authorization: 'Bearer ' + this.props.token
@@ -69,7 +69,7 @@ class MyPosts extends Component{
     deletePostHandler = () => {
         const postId = this.state.clickedPost;
         this.setState({isDeleting: true});
-        fetch('http://localhost:8080/delete-post', {
+        fetch('https://backend-hello-world/delete-post', {
             method: 'DELETE',
             headers: {
                 Authorization: 'Bearer ' + this.props.token,

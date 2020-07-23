@@ -21,7 +21,7 @@ class SavedPosts extends Component{
     }
 
     componentDidMount(){
-        fetch('http://localhost:8080/saved-posts',{
+        fetch('https://backend-hello-world/saved-posts',{
             method: 'GET',
             headers: {
                 Authorization: 'Bearer ' + this.props.token

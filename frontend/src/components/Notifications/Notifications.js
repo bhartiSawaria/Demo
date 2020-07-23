@@ -14,7 +14,7 @@ class Notifications extends Component{
     }
 
     componentDidMount(){
-        fetch('http://localhost:8080/notifications',{
+        fetch('https://backend-hello-world/notifications',{
             method: 'GET',
             headers: {
                 Authorization: 'Bearer ' + this.props.token

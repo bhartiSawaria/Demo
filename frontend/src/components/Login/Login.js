@@ -48,7 +48,7 @@ class Login extends Component{
         event.preventDefault();
         if( this.isFormValid() ){
             this.setState({isLoading: true});
-            fetch('http://localhost:8080/login',{
+            fetch('https://backend-hello-world/login',{
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

@@ -90,7 +90,7 @@ class Signup extends Component{
         event.preventDefault();
         if( this.isFormValid() ){
             this.setState({isLoading: true});
-            fetch('http://localhost:8080/signup',{
+            fetch('https://backend-hello-world/signup',{
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

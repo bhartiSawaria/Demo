@@ -20,7 +20,7 @@ class Post extends Component{
         if(isOutlined){
             icon.classList.remove('outline');
             icon.style.color = 'red';
-            fetch('http://localhost:8080/like-post', {
+            fetch('https://backend-hello-world/like-post', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -45,7 +45,7 @@ class Post extends Component{
         else{
             icon.classList.add('outline');
             icon.style.color = '';
-            fetch('http://localhost:8080/unlike-post', {
+            fetch('https://backend-hello-world/unlike-post', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -75,7 +75,7 @@ class Post extends Component{
         let isOutlined = icon.classList.contains('outline');
         if(isOutlined){
             icon.classList.remove('outline');
-            fetch('http://localhost:8080/save-post', {
+            fetch('https://backend-hello-world/save-post', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -99,7 +99,7 @@ class Post extends Component{
         }
         else{
             icon.classList.add('outline');
-            fetch('http://localhost:8080/remove-saved-post', {
+            fetch('https://backend-hello-world/remove-saved-post', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

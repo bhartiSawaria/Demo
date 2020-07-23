@@ -40,7 +40,7 @@ class Chats extends Component{
         const { messagesRef, contactedUsers } = this.state;
         let loadedUsers = [];
 
-        fetch('http://localhost:8080/users', {
+        fetch('https://backend-hello-world/users', {
             method: 'GET',
             headers: {
                 Authorization: 'Bearer ' + this.props.token
