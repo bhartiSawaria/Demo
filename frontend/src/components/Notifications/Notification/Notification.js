@@ -8,7 +8,7 @@ class Notification extends Component{
 
     crossIconClickHandler = () => {
         console.log('Clicked');
-        fetch('https://backend-hello-world/notification', {
+        fetch('https://backend-hello-world.herokuapp.com/notification', {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',

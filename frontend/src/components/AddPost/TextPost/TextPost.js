@@ -28,7 +28,7 @@ class TextPost extends Component{
         if(this.isInputValid()){
             this.setState({isLoading: true});
             console.log('State before sending', this.state.title, this.state.content);
-            fetch('https://backend-hello-world/add-post', {
+            fetch('https://backend-hello-world.herokuapp.com/add-post', {
                 method: 'POST',
                 headers: {
                     Authorization: 'Bearer ' + this.props.token,

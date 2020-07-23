@@ -21,7 +21,7 @@ class SavedPosts extends Component{
     }
 
     componentDidMount(){
-        fetch('https://backend-hello-world/saved-posts',{
+        fetch('https://backend-hello-world.herokuapp.com/saved-posts',{
             method: 'GET',
             headers: {
                 Authorization: 'Bearer ' + this.props.token

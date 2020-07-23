@@ -48,7 +48,7 @@ class Login extends Component{
         event.preventDefault();
         if( this.isFormValid() ){
             this.setState({isLoading: true});
-            fetch('https://backend-hello-world/login',{
+            fetch('https://backend-hello-world.herokuapp.com/login',{
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

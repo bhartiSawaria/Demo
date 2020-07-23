@@ -90,7 +90,7 @@ class Signup extends Component{
         event.preventDefault();
         if( this.isFormValid() ){
             this.setState({isLoading: true});
-            fetch('https://backend-hello-world/signup',{
+            fetch('https://backend-hello-world.herokuapp.com/signup',{
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

@@ -14,7 +14,7 @@ class Notifications extends Component{
     }
 
     componentDidMount(){
-        fetch('https://backend-hello-world/notifications',{
+        fetch('https://backend-hello-world.herokuapp.com/notifications',{
             method: 'GET',
             headers: {
                 Authorization: 'Bearer ' + this.props.token

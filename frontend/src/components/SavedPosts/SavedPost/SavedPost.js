@@ -19,7 +19,7 @@ class SavedPost extends Component{
         if(isOutlined){
             icon.classList.remove('outline');
             icon.style.color = 'red';
-            fetch('https://backend-hello-world/like-post', {
+            fetch('https://backend-hello-world.herokuapp.com/like-post', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -44,7 +44,7 @@ class SavedPost extends Component{
         else{
             icon.classList.add('outline');
             icon.style.color = 'black';
-            fetch('https://backend-hello-world/unlike-post', {
+            fetch('https://backend-hello-world.herokuapp.com/unlike-post', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -74,7 +74,7 @@ class SavedPost extends Component{
         let isOutlined = icon.classList.contains('outline');
         if(isOutlined){
             icon.classList.remove('outline');
-            fetch('https://backend-hello-world/save-post', {
+            fetch('https://backend-hello-world.herokuapp.com/save-post', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -98,7 +98,7 @@ class SavedPost extends Component{
         }
         else{
             icon.classList.add('outline');
-            fetch('https://backend-hello-world/remove-saved-post', {
+            fetch('https://backend-hello-world.herokuapp.com/remove-saved-post', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
