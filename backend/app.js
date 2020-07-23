@@ -15,7 +15,6 @@ const userRoutes = require('./routes/user');
 dotenv.config();
 
 const app = express();
-app.use(cors());
 
 const MONGODB_URI = process.env.MONGODB_URI;
 const CLOUDINARY_CLOUD_NAME = process.env.CLOUDINARY_CLOUD_NAME;
