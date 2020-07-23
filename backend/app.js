@@ -42,12 +42,12 @@ const imageStorage = new CloudinaryStorage({
 app.use(bodyParser.json());
 app.use(multer({storage: imageStorage}).single('image'));
 
-// app.use((req, res, next) => {
-//     res.setHeader('Access-Control-Allow-Origin', '*');
-//     res.setHeader('Access-Control-Allow-Headers', '*');
-//     res.setHeader('Access-Control-Allow-Methods', 'PUT, PATCH, GET, POST, DELETE, OPTIONS');
-//     next();
-// });
+app.use((req, res, next) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Headers', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'PUT, PATCH, GET, POST, DELETE, OPTIONS');
+    next();
+});
 
 app.use(authRoutes);
 app.use(postRoutes);
